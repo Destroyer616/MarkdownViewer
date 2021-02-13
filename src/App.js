@@ -1,5 +1,6 @@
 import React from "react";
 import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button"
 let marked = require("marked");
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
   updateMarkdown(markdown) {
     this.setState({ markdown });
   }
+
 
   render() {
  
@@ -86,6 +88,16 @@ class App extends React.Component {
               ></div>
             </div>
           </div>
+
+          <div className="row mt-4">
+            <div className="col text-center">
+              <h1>
+                {" "}
+                <Button as="input" type="reset"  value="Reset" />
+              </h1>
+            </div>
+          </div>
+
         </div>
       </div>
     );
